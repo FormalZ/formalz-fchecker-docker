@@ -1,6 +1,6 @@
 FROM ubuntu:18.04 as build
 ENV GAMESERVER_GIT_REPO_URL=https://github.com/e-ucm/formalz-fchecker.git
-ENV GAMESERVER_GIT_REF=master
+ENV GAMESERVER_GIT_REF=1.0.0
 ENV PATH="/root/formalz/.local/bin:${PATH}"
 RUN set -ex; \
   apt-get update && apt-get install -y --no-install-recommends \
